@@ -174,7 +174,7 @@ func (l *List) MoveToFront(e *Element) {
     if e.list != l || l.root.next == e {
         return
     }
-    l.move(e, l.root.prev)
+    l.move(e, &l.root)
 }
 
 
